@@ -1,0 +1,55 @@
+:root{
+    --roxo: #8C1F85;
+    --roxo-escuro: #5D2E89;
+    --roxo-claro: #8A1C7C;
+    --azul: #0D4FA1;
+    --fundo: #0D0D0D;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+
+h1{
+    text-transform: uppercase;
+}
+
+body{
+    min-width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background: var(--fundo);
+}
+
+.flex--container{
+    display: flex;
+}
+
+.vertical{
+    flex-direction: column;
+}
+
+header, footer{
+    color: white;
+    min-height: 12vh;
+}
+
+
+
+main{
+    flex: 1;
+    background: var(--azul);
+}
+
+
+
+
+
+
+
+
