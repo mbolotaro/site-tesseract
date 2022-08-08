@@ -19,8 +19,9 @@ h1{
     text-transform: uppercase;
 }
 
+
 body{
-    min-width: 100vw;
+    width: 100vw;
     min-height: 100vh;
     overflow-x: hidden;
     background: var(--fundo);
@@ -40,10 +41,10 @@ header, footer{
 }
 
 
-
 main{
     flex: 1;
     background: var(--azul);
+    
 }
 
 
