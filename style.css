@@ -11,6 +11,7 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -19,6 +20,10 @@ h1{
     text-transform: uppercase;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 body{
     width: 100vw;
@@ -27,7 +32,7 @@ body{
     background: var(--fundo);
 }
 
-.flex--container{
+.flex-container{
     display: flex;
 }
 
@@ -35,9 +40,21 @@ body{
     flex-direction: column;
 }
 
+.items--center{
+    align-items: center;
+}
+
+.content--around{
+    justify-content: space-around;
+}
+
+
 header, footer{
     color: white;
-    min-height: 12vh;
+    height: 12vh;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -46,6 +63,28 @@ main{
     background: var(--azul);
     
 }
+
+.menu{
+    width: 100%;
+}
+
+.menu__logo{
+    align-self: flex-start;
+    width: 20%;
+    min-width: fit-content;
+}
+
+.menu__logo>h1, .menu__logo>img{
+    margin-left: 10px;
+}
+
+
+
+.menu__list{
+    flex: 1;
+    list-style-type: none;
+}
+
 
 
 
