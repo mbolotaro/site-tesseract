@@ -8,7 +8,8 @@ class menu{
     addListener(){
         this.menuButton.addEventListener('click', (event) =>{
             console.log('funcionou');
-            this.menuList.classList.toggle('flex--show')
+            this.menuList.classList.toggle('list--show')
+
         })
     }
   
