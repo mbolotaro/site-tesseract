@@ -16,9 +16,6 @@
 
 
 
-h1{
-    text-transform: uppercase;
-}
 
 a{
     color: white;
@@ -30,6 +27,10 @@ body{
     min-height: 100vh;
     overflow-x: hidden;
     background: var(--fundo);
+}
+
+.uppercase{
+    text-transform: uppercase;
 }
 
 .flex-container{
@@ -69,7 +70,7 @@ main{
 }
 
 .menu__logo{
-    align-self: flex-start;
+    
     width: 20%;
     min-width: fit-content;
 }
@@ -78,18 +79,59 @@ main{
     margin-left: 10px;
 }
 
-
-
 .menu__list{
     flex: 1;
     list-style-type: none;
+    justify-content: space-around;
+}
+
+.mobile{
+    display: none;
 }
 
 
 
 
+/*Responsive*/
 
+@media (max-width: 700px) {
+    .mobile{
+        display: flex;
+    }
 
+    .pc{
+        display: none;
+    }
 
+    .menu{
+      
+        justify-content: space-between;
+    }
+    .menu__button{
+        width: 60px;
+        height: 2px;
+        background-color: white;
+        margin-right: 10px;
+        
+    }
 
+    .menu__button::before{
+        position: relative;
+        content: "";
+        width: 1px;
+        height: 2px;
+        background-color: white;
+        float: left;
+    }
 
+    .menu__button::after{
+        position: relative;
+        content: "";
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    
+}
