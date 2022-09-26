@@ -179,13 +179,13 @@ main{
     }
 
     .menu__button--toggled > .menu__button__hamburger::after{
-        transform: rotate(135deg);
+        transform: rotate(-45deg);
         margin-top: 0;
         
     }
 
     .menu__button--toggled > .menu__button__hamburger::before{
-        transform: rotate(-135deg);
+        transform: rotate(45deg);
         margin-top: 0;
     }
 
