@@ -9,7 +9,7 @@ class menu{
         this.menuButton.addEventListener('click', (event) =>{
             console.log('funcionou');
             this.menuList.classList.toggle('list--show')
-
+            this.menuButton.classList.toggle('menu__button--toggled')
         })
     }
   

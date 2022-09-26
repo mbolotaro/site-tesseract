@@ -4,7 +4,7 @@
     --roxo-claro: #8A1C7C;
     --azul: #0D4FA1;
     --fundo: #0D0D0D;
-    --hamburguer-width: 40px;
+    --hamburguer-width: 30px;
     --hamburguer-height: 2px;
 
 }
@@ -97,6 +97,8 @@ main{
 
 
 
+
+
 /*Responsive*/
 
 @media (max-width: 700px) {
@@ -134,8 +136,9 @@ main{
     .menu__button{
         width: var(--hamburguer-width);
         height: 50%;
- 
+        cursor: pointer;
         margin-right: 20px;
+        transition: .3s;
         
     }
 
@@ -143,9 +146,11 @@ main{
         width: 100%;
         height: var(--hamburguer-height);
         background-color: white;
-        
+        transition: .1s ease-in;
         
     }
+
+    
 
     .menu__button__hamburger::before{
         position: absolute;
@@ -154,6 +159,7 @@ main{
         height: var(--hamburguer-height);
         background-color: white;
         margin-top: -10px;
+        transition: .3s ease-out;
     }
 
     
@@ -162,14 +168,30 @@ main{
         content: "";
         width: 100%;
         height: var(--hamburguer-height);
-       
         background-color: white;
         margin-top: 10px;
+        transition: .3s ease-out;
     }
 
-    .menu__button:checked{
-        background-color: #0D4FA1;
+    .menu__button--toggled > .menu__button__hamburger{
+        background-color: transparent;
+        
     }
+
+    .menu__button--toggled > .menu__button__hamburger::after{
+        transform: rotate(135deg);
+        margin-top: 0;
+        
+    }
+
+    .menu__button--toggled > .menu__button__hamburger::before{
+        transform: rotate(-135deg);
+        margin-top: 0;
+    }
+
+   
+
+    
 
     @media (max-width: 300px) {
         .menu__logo h1{
