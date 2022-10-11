@@ -57,15 +57,19 @@ body{
 header, footer{
     color: white;
     height: 12vh;
-    
+    width: 100vw;
     display: flex;
     align-items: center;
 }
 
 
 main{
+    width: 100vw;
+    display: flex;
     flex: 1;
     background: var(--azul);
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -92,6 +96,61 @@ main{
 
 .mobile{
     display: none;
+}
+
+.cube_section{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube{
+    width: 300px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform: rotateX(-45deg) rotateY(-45deg);
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
+.cube .side{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, purple, black);
+    transform: rotateY( calc(90deg * var(--i))) translateZ(150px);
+    -webkit-user-drag: none;
+    user-select: none;
+    
+}
+
+.cube .top{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: radial-gradient(rgb(199, 32, 199), purple);
+    transform: rotateX(90deg) translateZ(150px);
+    -webkit-user-drag: none;
+    user-select: none;
+    
+}
+
+
+
+
+
+.cube .bottom{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    transform: rotateX(90deg) translateZ(-150px);
+    -webkit-user-drag: none;
+    user-select: none;
 }
 
 
@@ -215,3 +274,5 @@ main{
         top: 60px;
     }
 }
+
+

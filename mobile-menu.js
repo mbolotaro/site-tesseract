@@ -16,3 +16,30 @@ class menu{
 }
 
 const mainMenu = new menu('.menu__list', '.menu__button')
+
+
+const clickableSection = document.querySelector('.cube_section')
+var angles = {x: 0, y: 0}
+var isMouseDown = false
+
+const cube = document.querySelector('.cube')
+
+clickableSection.addEventListener('mousedown', () =>{
+    isMouseDown = true
+})
+
+clickableSection.addEventListener('mouseup', () =>{
+    isMouseDown = false
+})
+
+clickableSection.addEventListener('mousemove', (event) => {
+    console.log(`X: ${angles.x}, Y: ${angles.y}`)
+    if(isMouseDown){
+    angles.x+=event.movementX
+    angles.y+=event.movementY
+    cube.style.transform = `rotateY(${angles.x}deg) rotateX(${angles.y}deg)`
+    }
+})
+
+
+
