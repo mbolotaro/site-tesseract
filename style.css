@@ -90,10 +90,16 @@ main{
 }
 
 .menu__list{
+    
     flex: 1;
     list-style-type: none;
     justify-content: space-around;
 }
+
+.menu__item{
+    font-size: 14px;
+}
+
 
 .mobile{
     display: none;
@@ -101,7 +107,7 @@ main{
 
 .presentation{
     width: 100%;
-    height: 500px;
+    height: 86vh;
     background-image: url('images/typing.jpg');
     background-size: cover;
     
