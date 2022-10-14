@@ -53,6 +53,10 @@ body{
     justify-content: space-around;
 }
 
+.content--center{
+    justify-content: center;
+}
+
 
 header, footer{
     color: white;
@@ -65,11 +69,8 @@ header, footer{
 
 main{
     width: 100vw;
-    display: flex;
     flex: 1;
     background: var(--azul);
-    justify-content: center;
-    align-items: center;
     
 }
 
@@ -98,65 +99,40 @@ main{
     display: none;
 }
 
-.cube_section{
+.presentation{
     width: 100%;
-    height: 600px;
+    height: 500px;
+    background-image: url(images/typing.jpg);
+    background-size: cover;
+    
+}
+
+.presentation h2{
+    color: white;
+}
+
+.presentation .internal-link{
+    width: 100px;
+    height: 30px;
+    background-color: var(--roxo-claro);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: .2s ease-in;
+
 }
 
-.cube{
-    width: 300px;
-    height: 300px;
-    transform-style: preserve-3d;
-    transform: rotateX(-45deg) rotateY(-45deg);
-    -webkit-user-drag: none;
-    user-select: none;
+.presentation .internal-link:hover{
+    background-color: #8a1c7b70
+
 }
 
-.cube .side{
-    position: absolute;
+.content{
+    background-color: white;
     width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: linear-gradient(to bottom, purple, black);
-    transform: rotateY( calc(90deg * var(--i))) translateZ(150px);
-    -webkit-user-drag: none;
-    user-select: none;
-    
 }
-
-.cube .top{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: radial-gradient(rgb(199, 32, 199), purple);
-    transform: rotateX(90deg) translateZ(150px);
-    -webkit-user-drag: none;
-    user-select: none;
-    
-}
-
-
-
-
-
-.cube .bottom{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: black;
-    transform: rotateX(90deg) translateZ(-150px);
-    -webkit-user-drag: none;
-    user-select: none;
-}
-
-
-
-
-
 
 /*Responsive*/
 
@@ -196,7 +172,7 @@ main{
         width: var(--hamburguer-width);
         height: 50%;
         cursor: pointer;
-        margin-right: 20px;
+        margin-right: 40px;
         transition: .3s;
         
     }
@@ -248,7 +224,6 @@ main{
         margin-top: 0;
     }
 
-   
 
     
 
