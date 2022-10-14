@@ -111,6 +111,23 @@ main{
     color: white;
 }
 
+.presentation .internal-link{
+    width: 100px;
+    height: 30px;
+    background-color: var(--roxo-claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: .2s ease-in;
+
+}
+
+.presentation .internal-link:hover{
+    background-color: #8a1c7b70
+
+}
 
 
 
@@ -152,7 +169,7 @@ main{
         width: var(--hamburguer-width);
         height: 50%;
         cursor: pointer;
-        margin-right: 20px;
+        margin-right: 40px;
         transition: .3s;
         
     }
@@ -204,7 +221,6 @@ main{
         margin-top: 0;
     }
 
-   
 
     
 
