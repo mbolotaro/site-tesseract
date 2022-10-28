@@ -17,4 +17,3 @@ class menu{
 
 const mainMenu = new menu('.menu__list', '.menu__button')
 
-
